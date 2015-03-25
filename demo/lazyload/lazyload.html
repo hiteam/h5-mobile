@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lazyload DEMO</title>
+
+    <style>
+        html, body {
+            /*height: 100%;*/
+            /*overflow: hidden;*/
+        }
+        body {background-color: #f1f1f1;}
+        #feed, #feed2 {
+            width: 640px;            
+            margin: auto;
+            text-align: center;
+        }
+        #feed img,
+        #feed2 img {
+            width: 640px;
+            height: 640px;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        #feed2 {
+            height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>相对于浏览器窗口的懒加载</h2>
+    <div id="feed">
+        <p><img class="haha be-lazy" data-src="http://thingd-media-ec1.thefancy.com/default/563625120803853487_4991e9f282aa.jpg" /></p>
+        <p><img class="be-lazy kk" data-src="http://thingd-media-ec4.thefancy.com/default/608684683898655514_1deee30385d5.jpg" /></p>
+        <p><img class="oo be-lazy xx" data-src="http://thingd-media-ec5.thefancy.com/default/669353251233075158_c3336965603d.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec2.thefancy.com/default/818033883806174717_fb6d2f1b12e8.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/833196307664346225_d02bf6922d2b.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/833998633215989838_7f645c1c269d.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/533492129243071934_e3f320c0727d.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec1.thefancy.com/default/697640094781148178_7a86ee7e8045.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec2.thefancy.com/default/693199505805286522_626f99c23ace.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/196737418999635429_3e71ffafd168.jpeg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec4.thefancy.com/default/675549166792868304_962fe1d40b61.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec2.thefancy.com/default/283804803237152873_b212121e0860.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/812994668621994301_9f79d6ba63d4.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/544177908143361202_ff0255c42ad6.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/830838186446949085_5c062d2a50a0.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/744386450966977880_9c09960435bb.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec6.thefancy.com/default/483115830637234109_610889e963b3.png" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec6.thefancy.com/default/489940708321402239_6a69f1d5006a.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec1.thefancy.com/default/379406399605575777_b5ade8600f90.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec6.thefancy.com/default/444406233730913641_ddbced8e76e9.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/467914359671097821_88c446b38b3c.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/235104649516944729_68f1d80de39f.jpg" /></p>
+    </div>
+
+    <h2>相对于容器的懒加载</h2>
+    <div id="feed2">
+        <p><img class="be-lazy" data-src="http://thingd-media-ec1.thefancy.com/default/563625120803853487_4991e9f282aa.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec4.thefancy.com/default/608684683898655514_1deee30385d5.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/669353251233075158_c3336965603d.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec2.thefancy.com/default/818033883806174717_fb6d2f1b12e8.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/833196307664346225_d02bf6922d2b.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/833998633215989838_7f645c1c269d.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/533492129243071934_e3f320c0727d.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec1.thefancy.com/default/697640094781148178_7a86ee7e8045.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec2.thefancy.com/default/693199505805286522_626f99c23ace.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/196737418999635429_3e71ffafd168.jpeg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec4.thefancy.com/default/675549166792868304_962fe1d40b61.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec2.thefancy.com/default/283804803237152873_b212121e0860.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/812994668621994301_9f79d6ba63d4.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/544177908143361202_ff0255c42ad6.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/830838186446949085_5c062d2a50a0.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/744386450966977880_9c09960435bb.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec6.thefancy.com/default/483115830637234109_610889e963b3.png" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec6.thefancy.com/default/489940708321402239_6a69f1d5006a.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec1.thefancy.com/default/379406399605575777_b5ade8600f90.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec6.thefancy.com/default/444406233730913641_ddbced8e76e9.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec5.thefancy.com/default/467914359671097821_88c446b38b3c.jpg" /></p>
+        <p><img class="be-lazy" data-src="http://thingd-media-ec3.thefancy.com/default/235104649516944729_68f1d80de39f.jpg" /></p>
+    </div>
+    <script src="../../src/lazyload/lazyload.js"></script>
+    <script>
+        var lazyload = wylib.lazyload('#feed');
+
+        setTimeout(function () {
+            lazyload.getLazyItems();
+        }, 1000)
+        
+        var lazyload2 = wylib.lazyload('#feed2', {
+            visualWindow: document.getElementById('feed2')
+        });
+    </script>
+</body>
+</html>
