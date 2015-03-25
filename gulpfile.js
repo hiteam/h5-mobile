@@ -11,14 +11,6 @@ var minifyCSS = require('gulp-minify-css'),     // 压缩css文件
     concat = require('gulp-concat'),            // 合并文件
     rename = require('gulp-rename');            // 重命名
 
-// 合并zepto+功能模块，并压缩到build/下
-gulp.task('zepto', function () {
-    return gulp.src(['./zepto/zepto.js', './zepto/modules/*.js'])
-        .pipe(concat('zepto.pak.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('./build/zepto/'));
-});
-
 // 压缩src文件到build/下
 gulp.task('gallery-js', function () {
     gulp.src(['./src/**/*.js'])
@@ -32,4 +24,4 @@ gulp.task('gallery-js', function () {
         .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('default', ['zepto', 'gallery-js']);
+gulp.task('default', ['gallery-js']);
