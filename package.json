@@ -1,0 +1,27 @@
+{
+  "name": "h5-mobile",
+  "version": "1.0.0",
+  "author": "xia yanfei",
+  "description": "...",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.9.4",
+    "gulp-less": "^1.3.5",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-uglify": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hiteam/h5-mobile.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hiteam/h5-mobile/blob/master/LICENSE"
+    }
+  ]
+}
