@@ -1,3 +1,9 @@
+/**
+ * @module lazyload
+ * @author xiayanfei@yeah.net
+ * @date 2015-03-04
+ */
+
 ;(function (win, wylib) {
 
     "use strict";
@@ -145,7 +151,7 @@
         bufferHeight:   Number,     预加载视区以下 bufferHeight 内的图片（上下滑动/滚动）
         bufferWidth:    Number,     预加载视区右侧 bufferWidth 内的图片（左右滑动/滚动）
         lazyOnce:       Boolean,    元素加载成功即清除事件, 默认true
-        clazz:          String,     懒元素的class
+        clazz:          String,     懒元素的class，默认be-lazy
         visualWindow:   Object,     相对容器的可视区域，默认为浏览器[window对象]
         loadComplete:   Function,   图片加载完成触发的回调
         loadError:      Function,   图片加载失败触发的回调
