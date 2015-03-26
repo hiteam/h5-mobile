@@ -17,8 +17,8 @@ TODO：移动端触发加载事件待优化。
     var lazyload = wylib.lazyload('#container', {
             bufferHeight:   Number,     预加载视区以下`bufferHeight`内的图片（上下滑动/滚动）
             bufferWidth:    Number,     预加载视区右侧`bufferWidth`内的图片（左右滑动/滚动）
-            lazyOnce:       Boolean,    所有懒元素加载完成后清除触发事件，默认true。
-                                        如果应用于无尽列表，则该选项应该设置为false，这样对新插入的懒元素，滚动屏幕仍可触发懒加载。
+            lazyOnce:       Boolean,    所有懒元素加载完成后清除触发事件，默认true。如果应用于无尽列表，则该选项应该设置为false，
+                                        这样对新插入的懒元素，滚动屏幕仍可触发懒加载。
             clazz:          String,     懒元素的class
             visualWindow:   Object,     相对容器的可视区域，默认为浏览器[window对象]
             loadComplete:   Function,   图片加载完成触发的回调
