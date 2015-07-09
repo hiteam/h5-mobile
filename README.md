@@ -14,26 +14,26 @@
 
 2. ~/.ssh/下添加config文件，配置多个账号信息：
 
-    Host github.com
+        Host github.com
 
-        HostName github.com
+            HostName github.com
 
-        User username1
+            User username1
 
-        PreferredAuthentications publickey
+            PreferredAuthentications publickey
 
-        IdentityFile ~/.ssh/id_rsa_username1
+            IdentityFile ~/.ssh/id_rsa_username1
 
 
-    Host bitbucket.org
+        Host bitbucket.org
 
-        HostName bitbucket.org
+            HostName bitbucket.org
 
-        User username2
+            User username2
 
-        PreferredAuthentications publickey
+            PreferredAuthentications publickey
 
-        IdentityFile ~/.ssh/id_rsa_username2
+            IdentityFile ~/.ssh/id_rsa_username2
 
 
 
